@@ -6,11 +6,11 @@
 # information, and update portfolio_config.yaml to point to it.
 # ============================================================
 
-name: "Ekow yalley"
-tagline: " Data Scientist | MSU | 2026 Graduate"
+name: "Ekow Yalley"
+tagline: " Data Scientist | Umich | 2021 Graduate"
 
 about: |
-  I am a data science student at Michigan State University, passionate about leveraging data to solve real-world problems.
+  I am a data science student at University of Michigan, passionate about leveraging data to solve real-world problems.
    With a background in statistics and machine learning, I enjoy exploring data to uncover insights and drive informed decision-making. 
    I am eager to apply my skills in a collaborative environment and contribute to impactful projects.
 
@@ -18,6 +18,6 @@ about: |
   I picked the projects that best represent my abilities and interests, and showcase a diversity of skills._
 
 # Contact information — remove any fields you prefer not to share
-email: "yalleyek@msu.edu"
+email: "ekowny@gmail.com"
 linkedin: "https://www.linkedin.com/in/ekow-yalley-29869a260/"
 github: "https://github.com/EkowYalley"
