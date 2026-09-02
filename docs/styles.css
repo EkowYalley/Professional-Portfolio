@@ -61,6 +61,13 @@ h3 { margin: 0; font-size: 1.65rem; }
 .case-action { align-self: center; text-align: right; }
 .case-action a { font-weight: 800; text-decoration: none; border-bottom: 2px solid var(--maize); }
 .case-action a:hover, .case-action a:focus { color: var(--teal); }
+.library-preview { padding-top: 3rem; }
+.library-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.library-grid article { padding: 1.7rem; background: var(--white); border: 1px solid var(--line); border-top: 5px solid var(--teal); }
+.library-grid .status { margin: 0 0 1.2rem; color: var(--teal); font-size: .7rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.library-grid article > p:not(.status) { color: var(--muted); }
+.library-grid a, .library-link a { font-weight: 800; text-decoration-color: var(--maize); text-decoration-thickness: 2px; text-underline-offset: .25rem; }
+.library-link { margin-top: 1.4rem; text-align: right; }
 .methods { max-width: none; background: var(--navy); color: white; padding-left: max(2rem, calc((100vw - var(--max)) / 2 + 2rem)); padding-right: max(2rem, calc((100vw - var(--max)) / 2 + 2rem)); }
 .methods .eyebrow { color: #78c8c1; }
 .method-grid { margin-top: 3rem; display: grid; grid-template-columns: repeat(4,1fr); border-top: 1px solid rgba(255,255,255,.3); border-left: 1px solid rgba(255,255,255,.3); }
@@ -100,10 +107,30 @@ footer { max-width: var(--max); margin: 0 auto; padding: 1.5rem 2rem 2.5rem; dis
 .callout { margin: 1.5rem 0; padding: 1.1rem 1.2rem; background: #e5f0ee; border-left: 5px solid var(--teal); }
 .callout strong { color: var(--ink); }
 .next-study { display: flex; justify-content: space-between; gap: 1rem; padding-top: 2rem; border-top: 2px solid var(--ink); }
+.library-hero { padding-bottom: 2rem; }
+.catalog-section { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+.catalog-section.compact-top { padding-top: 1rem; }
+.catalog-heading { display: grid; grid-template-columns: 1.2fr .8fr; gap: 3rem; align-items: end; margin-bottom: 2rem; }
+.catalog-heading h2 { font-size: clamp(2rem, 4vw, 3.2rem); }
+.catalog-heading > p { margin: 0; color: var(--muted); }
+.catalog-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 1rem; }
+.catalog-grid article { display: flex; flex-direction: column; padding: 1.5rem; min-height: 260px; background: var(--white); border: 1px solid var(--line); }
+.catalog-grid h3 { margin-top: 1.1rem; }
+.catalog-grid article > p { color: var(--muted); }
+.catalog-status { align-self: flex-start; padding: .25rem .5rem; font-size: .66rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+.catalog-status.ready { background: #d9eee9; color: #155b57; }
+.catalog-status.context { background: #dce6ef; color: #244d70; }
+.catalog-status.supporting { background: #f7e6aa; color: #654d00; }
+.catalog-status.archive { background: #ece7dc; color: #665e52; }
+.catalog-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: auto; padding-top: 1rem; }
+.catalog-links a { font-weight: 800; text-decoration-color: var(--maize); text-decoration-thickness: 2px; text-underline-offset: .25rem; }
+.archive-grid article { min-height: 230px; }
+.catalog-note { margin-top: 1.2rem; padding: 1rem 1.2rem; border-left: 5px solid var(--line); color: var(--muted); background: rgba(255,255,255,.45); }
 @media (max-width: 850px) {
   .site-header { align-items: flex-start; }
   nav { flex-wrap: wrap; justify-content: flex-end; gap: .7rem 1rem; }
   .portfolio-hero, .study-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .catalog-heading { grid-template-columns: 1fr; gap: 1rem; }
   .portfolio-hero { padding-top: 4rem; }
   .case-row { grid-template-columns: 44px 1fr; }
   .case-action { grid-column: 2; text-align: left; }
@@ -117,6 +144,8 @@ footer { max-width: var(--max); margin: 0 auto; padding: 1.5rem 2rem 2.5rem; dis
   .portfolio-hero, .section, .study-hero, .study-layout, .closing { padding-left: 1rem; padding-right: 1rem; }
   h1 { font-size: 3.15rem; }
   .evidence-card dl, .method-grid { grid-template-columns: 1fr; }
+  .library-grid { grid-template-columns: 1fr; }
+  .catalog-grid { grid-template-columns: 1fr; }
   .case-row, .case-row.feature { grid-template-columns: 1fr; margin-left: 0; margin-right: 0; }
   .case-action { grid-column: 1; }
   .result-list { display: grid; }

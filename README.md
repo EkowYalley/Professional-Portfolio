@@ -12,6 +12,10 @@ The portfolio is intentionally separate from his concise professional website at
 - Rental Revenue Analysis in SQL
 - Regional Sales Reporting Pipeline
 - Rail Operations Data Exploration (private-data context note)
+- Me vs. You — Two-Player Snake
+- Numerical Computing Experiments
+
+The site also includes a reviewed repository catalog that distinguishes employer-ready case studies, supporting work, and projects that still need repair.
 
 ## Publishing
 
