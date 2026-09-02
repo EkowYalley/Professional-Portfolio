@@ -1,315 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ekow Yalley | Data Science Portfolio</title>
-
-  <!-- Base styles always loaded -->
-  <link rel="stylesheet" href="css/base.css" />
-
-  <!-- Theme stylesheet — controlled by `theme` in portfolio_config.yaml -->
-  <link rel="stylesheet" href="css/themes/msu-dark.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ekow Yalley is an operations-minded data analyst with a University of Michigan background in econometrics, data science, and biology.">
+  <title>Ekow Yalley | Data Analyst</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <!-- ===== Header ===== -->
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="header-inner">
-      <div class="header-name">Ekow yalley</div>
-      <div class="header-tagline"> Data Scientist | MSU | 2026 Graduate</div>
-    </div>
-
-    <!-- Navigation bar -->
-    <nav class="site-nav">
-      <a href="#about">About</a>
+    <a class="wordmark" href="#top" aria-label="Ekow Yalley home">EY</a>
+    <nav aria-label="Primary navigation">
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- ===== Main content (filled in by child templates) ===== -->
-  <main class="site-main">
-    
-
-<!-- ===== About section ===== -->
-<section id="about" class="section about-section">
-  <h2>About Me</h2>
-  <div class="about-text"><p>I am a data science student at Michigan State University, passionate about leveraging data to solve real-world problems.
- With a background in statistics and machine learning, I enjoy exploring data to uncover insights and drive informed decision-making. 
- I am eager to apply my skills in a collaborative environment and contribute to impactful projects.</p>
-<p><em>I would like this portfolio to showcase my work and skills, as a data science professional
-I picked the projects that best represent my abilities and interests, and showcase a diversity of skills.</em></p></div>
-</section>
-
-<!-- ===== Projects section ===== -->
-<section id="projects" class="section projects-section">
-  <h2>Projects</h2>
-
-  <div class="project-grid">
-    
-    <article class="project-card">
-
-      <!-- Project thumbnail image -->
-      <div class="project-image-wrapper">
-        <img
-          src="img/my_project_1.png"
-          alt="Thumbnail for Project Sql"
-          class="project-image"
-        />
-      </div>
-
-      <div class="project-body">
-        <h3 class="project-title">Project Sql</h3>
-
-        <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">For this SQL project I had to work with the Actors database to figure out some insightson the data base. I answered various questions about the data base and I had to use different SQL commands to get the answers, like which actor generates the most revenue by agregating data bases. I used this insight to make recommendations to the manager of the video store on how to optimize sales and inventory management.
-</p>
-
-        <!-- Tech stack as pill badges -->
-        <div class="tech-stack">
-          
-          <span class="tech-badge">Python</span>
-          
-          <span class="tech-badge">os</span>
-          
-          <span class="tech-badge">SQL</span>
-          
-          <span class="tech-badge">Pandas</span>
-          
-          <span class="tech-badge">Matplotlib</span>
-          
-          <span class="tech-badge">sqlalchemy</span>
-          
-          <span class="tech-badge">Jupyter Notebooks</span>
-          
-        </div>
-
-        <!-- Collapsible details (problem / approach / results) -->
-        <details class="project-details">
-          <summary>More details</summary>
-
-          <div class="detail-block">
-            <h4>Problem</h4>
-            <p>For this SQL project I had to work with the Actors database to figure out some insightson the data base. I answered various questions about the data base and I had to use different SQL commands to get the answers, like which actor generates the most revenue by agregating data bases.
-</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Approach</h4>
-            <p>My approach involved designing and implementing SQL queries to extract and analyze data from the Actors database.
- I focused on understanding the relationships between different entities in the database and used aggregate functions to compute key metrics.
-</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Results &amp; Impact</h4>
-            <p>The results provided valuable insights into the performance of different actors and helped identify key revenue drivers. The results also showed what drove sales at the store and what actors were the most popular. This information can be used to make
- informed decisions about marketing strategies and inventory management, for the manager of of the video store.
-</p>
-          </div>
-        </details>
-
-        <!-- Links to the GitHub repo and notebook -->
-        <div class="project-links">
-          
-          <a href="https://github.com/EkowYalley/cmse492-hw02-yalleyek.git" target="_blank" rel="noopener" class="btn btn-repo">
-            View Repo
-          </a>
-          
-          
-          <a href="https://github.com/EkowYalley/cmse492-hw02-yalleyek/blob/main/HW02-STUDENT.ipynb" target="_blank" rel="noopener" class="btn btn-notebook">
-            View Notebook
-          </a>
-          
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Bellbrook, Ohio · Early-career analytics</p>
+        <h1>Operations-minded data analyst who turns messy information into decisions people can use.</h1>
+        <p class="lede">I’m Ekow Yalley, a University of Michigan graduate with a B.S. in Econometrics (Data Science) and Biology. I work across Python, SQL, data validation, and reporting, and I’m pursuing junior data analyst, BI, reporting, and data-quality roles in Ohio.</p>
+        <div class="actions">
+          <a class="button primary" href="#projects">View selected work</a>
+          <a class="button secondary" href="mailto:ekowny@gmail.com">Email Ekow</a>
         </div>
       </div>
+      <figure class="portrait-card">
+        <img src="IMG_4656.PNG" alt="Portrait of Ekow Yalley">
+        <figcaption>Python · SQL · data quality · business intelligence</figcaption>
+      </figure>
+    </section>
 
-    </article>
-    
-    <article class="project-card">
+    <section class="proof-strip" aria-label="Core strengths">
+      <div><strong>University of Michigan</strong><span>B.S., double major</span></div>
+      <div><strong>Python + SQL</strong><span>analysis and automation</span></div>
+      <div><strong>Validation first</strong><span>checks, limits, reproducibility</span></div>
+      <div><strong>Ohio focused</strong><span>early-career data roles</span></div>
+    </section>
 
-      <!-- Project thumbnail image -->
-      <div class="project-image-wrapper">
-        <img
-          src="img/img_LC.png"
-          alt="Thumbnail for Project Sports prediction"
-          class="project-image"
-        />
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Data work grounded in operations</h2>
       </div>
-
-      <div class="project-body">
-        <h3 class="project-title">Project Sports prediction</h3>
-
-        <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">The project I did for Introduction to Machine Learning was to predict the outcomes of the march madness tournament using different machine learning models and then comparing the results of those models to see which one was more accurate at predicting the outcomes of the tournament.
-</p>
-
-        <!-- Tech stack as pill badges -->
-        <div class="tech-stack">
-          
-          <span class="tech-badge">Pandas</span>
-          
-          <span class="tech-badge">Pathlib</span>
-          
-          <span class="tech-badge">Python</span>
-          
-          <span class="tech-badge">re</span>
-          
-          <span class="tech-badge">numpy</span>
-          
-          <span class="tech-badge">matplotlib</span>
-          
-          <span class="tech-badge">sklearn</span>
-          
-        </div>
-
-        <!-- Collapsible details (problem / approach / results) -->
-        <details class="project-details">
-          <summary>More details</summary>
-
-          <div class="detail-block">
-            <h4>Problem</h4>
-            <p>The problem was to find which model was more accurate at predicting the outcomes of the march madness tournament. 
-</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Approach</h4>
-            <p>I used data sets that were publicaly avalible of previous march madness tournaments and I used those previous results to  create a new data frame of what I felt was the most important features to predict the outcomes of the tournament. I then used that data frame to train different machine learning models  and then I compared the results of those models to see which one was more accurate at predicting the outcomes of the tournament.
-</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Results &amp; Impact</h4>
-            <p>I recorded the frequency of how many times each model predicted how many times each team would go to each round of the tournament and then  I compared those frequencies to the actual outcomes of the tournament to see which model was more accurate.
-</p>
-          </div>
-        </details>
-
-        <!-- Links to the GitHub repo and notebook -->
-        <div class="project-links">
-          
-          <a href="https://github.com/Lcoronam/March-Madness/tree/main" target="_blank" rel="noopener" class="btn btn-repo">
-            View Repo
-          </a>
-          
-          
-          <a href="https://github.com/EkowYalley/Me-vs-You/blob/main/Hack.py" target="_blank" rel="noopener" class="btn btn-notebook">
-            View Notebook
-          </a>
-          
-        </div>
+      <div class="timeline">
+        <article>
+          <div class="timeline-meta"><span>May 2021–Present</span><span>Current</span></div>
+          <div><h3>Eco-Rubber Limited</h3><p class="role">Operations Data Analyst</p></div>
+          <div><p>Building weather-data workflows for tapping decisions, equipment-monitoring concepts for maintenance alerts, and a centralized SQL/ETL architecture for factory, inventory, purchasing, and shipping records.</p><p class="note">Implementation scope and measured results are still being documented; no production impact is claimed here.</p></div>
+        </article>
+        <article>
+          <div class="timeline-meta"><span>Sep 2024–Aug 2025</span><span>Professional</span></div>
+          <div><h3>ATESTEO North America</h3><p class="role">Test Bench Operator</p></div>
+          <p>Programmed and adjusted drive-test scripts, investigated anomalies in test data, and coordinated with technicians and engineers to keep component tests running and accurately reported.</p>
+        </article>
+        <article>
+          <div class="timeline-meta"><span>Aug 2025–Dec 2025</span><span>Team project</span></div>
+          <div><h3>MxV Rail</h3><p class="role">Data Lead</p></div>
+          <p>Used Python and Orange to explore months of train-run data and created visualizations comparing rail-car behavior across operating conditions and track segments.</p>
+        </article>
       </div>
+    </section>
 
-    </article>
-    
-    <article class="project-card">
-
-      <!-- Project thumbnail image -->
-      <div class="project-image-wrapper">
-        <img
-          src="img/placeholder_project_2.png"
-          alt="Thumbnail for AWS "
-          class="project-image"
-        />
+    <section class="section projects" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects with the context left in</h2>
+        <p>Each project states what the data can support, what remains uncertain, and whether the work was completed independently, in a course, or with a team.</p>
       </div>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="project-kicker"><span>Predictive modeling</span><span>6 validation checks passed</span></div>
+          <h3>AWS NYC 311 Service Resolution Modeling</h3>
+          <p>Built a leakage-safe logistic-regression baseline using 49,999 validated public NYC 311 records and a target derived from actual creation and closure timestamps.</p>
+          <dl class="metrics">
+            <div><dt>Accuracy</dt><dd>78.7%</dd></div>
+            <div><dt>Recall</dt><dd>73.7%</dd></div>
+            <div><dt>Model</dt><dd>Logistic regression</dd></div>
+          </dl>
+          <p class="note"><strong>What the result means:</strong> the corrected baseline outperformed the 59.5% majority-class benchmark and achieved 88.3% ROC AUC. It is still historical, closed-request data—not a deployment-ready prioritization system.</p>
+          <div class="tags"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>AWS</span><span>Athena</span></div>
+          <div class="card-actions"><a href="https://github.com/EkowYalley/aws-nyc311-yalleyek" target="_blank" rel="noopener">GitHub repository</a></div>
+        </article>
 
-      <div class="project-body">
-        <h3 class="project-title">AWS </h3>
+        <article class="project-card">
+          <div class="project-kicker"><span>SQL analysis</span><span>5 validation checks passed</span></div>
+          <h3>Rental Revenue Analysis in SQL</h3>
+          <p>Analyzed $67,406.56 of linked rental revenue across 200 actors in the fictional Sakila database using joins, grouped aggregation, CTEs, and window functions.</p>
+          <p class="note"><strong>Validation and limitation:</strong> five unmatched payments totaling $9.95 were quantified and excluded. Revenue is associated with an actor’s films; it does not measure that actor’s causal contribution to demand.</p>
+          <div class="tags"><span>MySQL</span><span>SQLAlchemy</span><span>Docker</span><span>Jupyter</span></div>
+          <div class="card-actions"><a href="https://github.com/EkowYalley/cmse492-hw02-yalleyek" target="_blank" rel="noopener">GitHub repository</a></div>
+        </article>
 
-        <!-- Short summary written for a non-expert audience -->
-        <p class="project-summary">The goal of this project was to explore AWS by picking a stackholder question and then using different Aws services like Atena and S3 as well as  sagemaker to answer the question. 
-</p>
+        <article class="project-card">
+          <div class="project-kicker"><span>Data pipeline</span><span>8 checks · 4 tests passed</span></div>
+          <h3>Regional Sales Reporting Pipeline</h3>
+          <p>Built a reproducible Python pipeline that validates sales and customer files, joins them, aggregates regional/category reporting, and reconciles $7,816.00 from source to output.</p>
+          <p class="note"><strong>Scope:</strong> the included 48-row dataset is a small supplied sample. The project demonstrates workflow design, error detection, testing, and reconciliation—not production scale.</p>
+          <div class="tags"><span>Python</span><span>pandas</span><span>Data quality</span><span>Unit testing</span></div>
+          <div class="card-actions"><a href="https://github.com/EkowYalley/cmse492-hw01-yalleyek" target="_blank" rel="noopener">GitHub repository</a></div>
+        </article>
 
-        <!-- Tech stack as pill badges -->
-        <div class="tech-stack">
-          
-          <span class="tech-badge">sklearn</span>
-          
-          <span class="tech-badge">Python</span>
-          
-          <span class="tech-badge">AWS Sagemaker</span>
-          
-          <span class="tech-badge">io</span>
-          
-        </div>
-
-        <!-- Collapsible details (problem / approach / results) -->
-        <details class="project-details">
-          <summary>More details</summary>
-
-          <div class="detail-block">
-            <h4>Problem</h4>
-            <p>Compare sagemaker to regular sklearn to figure out which machine learning model was more accurate in predicting how long it took for the city departments to resolve complaints.
-</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Approach</h4>
-            <p>The approach was to first use Athena to create a binary classification of the data set in order to predict whether a complaint would be resolved in less than 3 days or not.  Then I used sagemaker to train a machine learning model on the data set and then I used sklearn to train a machine learning model on the same data set.  Finally I compared the results of the two models to see which one was more accurate.
-</p>
-          </div>
-
-          <div class="detail-block">
-            <h4>Results &amp; Impact</h4>
-            <p>The results showed that the sagemaker model was more accurate than the sklearn model in predicting how long it took for the city departments to resolve complaints. This insight will help inform future machine learning projects and guide the selection of appropriate tools for different use cases.
-</p>
-          </div>
-        </details>
-
-        <!-- Links to the GitHub repo and notebook -->
-        <div class="project-links">
-          
-          <a href="https://github.com/EkowYalley/aws-nyc311-yalleyek/tree/master" target="_blank" rel="noopener" class="btn btn-repo">
-            View Repo
-          </a>
-          
-          
-          <a href="https://github.com/EkowYalley/aws-nyc311-yalleyek/tree/master/aws-nyc311-yalleyek/notebooks" target="_blank" rel="noopener" class="btn btn-notebook">
-            View Notebook
-          </a>
-          
-        </div>
+        <article class="project-card">
+          <div class="project-kicker"><span>Team project</span><span>Private data</span></div>
+          <h3>Rail Operations Data Exploration</h3>
+          <p>Analyzed train-run data with Python and Orange, comparing cars across operating conditions and track sections and translating patterns into visual material for team discussions.</p>
+          <p class="note"><strong>Current limitation:</strong> the underlying rail data and code are not public, and the analysis does not establish causal safety or maintenance improvements.</p>
+          <div class="tags"><span>Python</span><span>Orange</span><span>EDA</span><span>Visualization</span></div>
+        </article>
       </div>
+    </section>
 
-    </article>
-    
-  </div>
-</section>
+    <section class="section education" id="education">
+      <div class="section-heading"><p class="eyebrow">Education</p><h2>University of Michigan — Ann Arbor</h2></div>
+      <div class="education-card">
+        <div><h3>Bachelor of Science (B.S.)</h3><p>Double major: Econometrics (Data Science) and Biology</p></div>
+        <div class="education-meta"><span>Sep 2017–May 2021</span><span>GPA 3.88</span></div>
+      </div>
+    </section>
 
-<!-- ===== Contact section ===== -->
-<section id="contact" class="section contact-section">
-  <h2>Contact</h2>
-  <ul class="contact-list">
-    
-    <li>
-      <span class="contact-label">Email:</span>
-      <a href="mailto:yalleyek@msu.edu">yalleyek@msu.edu</a>
-    </li>
-    
-    
-    <li>
-      <span class="contact-label">LinkedIn:</span>
-      <a href="https://www.linkedin.com/in/ekow-yalley-29869a260/" target="_blank" rel="noopener">https://www.linkedin.com/in/ekow-yalley-29869a260/</a>
-    </li>
-    
-    
-    <li>
-      <span class="contact-label">GitHub:</span>
-      <a href="https://github.com/EkowYalley" target="_blank" rel="noopener">https://github.com/EkowYalley</a>
-    </li>
-    
-  </ul>
-</section>
-
-
+    <section class="contact" id="contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Looking for careful early-career analysts in Ohio?</h2>
+      <p>I’m interested in junior data analyst, BI, reporting, operations-analytics, and data-quality roles.</p>
+      <div class="actions"><a class="button primary" href="mailto:ekowny@gmail.com">ekowny@gmail.com</a><a class="button secondary light" href="https://www.linkedin.com/in/ekow-yalley-29869a260/" target="_blank" rel="noopener">LinkedIn</a><a class="button secondary light" href="https://github.com/EkowYalley" target="_blank" rel="noopener">GitHub</a></div>
+    </section>
   </main>
 
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <p>Built with the Data Science Portfolio Template &mdash; powered by Python &amp; Jinja2.</p>
-  </footer>
-
+  <footer><span>Ekow Yalley</span><span>Bellbrook, Ohio</span></footer>
 </body>
 </html>

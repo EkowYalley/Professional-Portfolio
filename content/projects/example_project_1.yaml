@@ -5,38 +5,34 @@
 # Copy this file to create your own project entries.
 # ============================================================
 
-title: "Project Sql"
+title: "Rental Revenue Analysis in SQL"
+context: "SQL analysis · 5 validation checks passed"
 
 short_summary: >
-  For this SQL project I had to work with the Actors database to figure out some insightson the data base.
-  I answered various questions about the data base and I had to use different SQL commands to get the answers, like which actor
-  generates the most revenue by agregating data bases. I used this insight to make recommendations to the manager of the video store on how to optimize sales and inventory management.
+  Analyzed $67,406.56 of linked rental revenue across 200 actors in the fictional Sakila database using joins, grouped aggregation, CTEs, and window functions.
 
 
 tech_stack:
   - Python
-  - os
   - SQL
-  - Pandas
-  - Matplotlib
-  - sqlalchemy
-  - Jupyter Notebooks
+  - pandas
+  - SQLAlchemy
+  - Docker
+  - Jupyter
 
 problem_statement: >
-  For this SQL project I had to work with the Actors database to figure out some insightson the data base.
-  I answered various questions about the data base and I had to use different SQL commands to get the answers, like which actor
-  generates the most revenue by agregating data bases.
+  Identify which actors are associated with the highest rental revenue and which film categories contribute most to each actor's total.
 
 approach: >
-  My approach involved designing and implementing SQL queries to extract and analyze data from the Actors database.
-   I focused on understanding the relationships between different entities in the database and used aggregate functions to compute key metrics.
+  Calculated film-level revenue from payment, rental, and inventory records; joined films to actors and categories; then used grouped aggregation and window functions to rank actors and calculate category shares.
 
 
 results_impact: >
-  The results provided valuable insights into the performance of different actors and helped identify key revenue drivers.
-  The results also showed what drove sales at the store and what actors were the most popular. This information can be used to make
-   informed decisions about marketing strategies and inventory management, for the manager of of the video store.
+  Reconciled $67,406.56 of linked film revenue to the $67,416.51 payment total after identifying five unmatched payments totaling $9.95. Produced manager-ready top-20 and actor-category outputs.
+validation: >
+  Five automated checks passed: revenue reconciliation, rental-to-inventory integrity, category-share totals, unique top-20 actors, and descending revenue order.
+limitations: >
+  Sakila is fictional sample data. Revenue is associated with films in which an actor appears; it does not estimate that actor's causal contribution, and actor totals cannot be added because films have multiple actors.
 
-repo_url: "https://github.com/EkowYalley/cmse492-hw02-yalleyek.git"
-notebook_url: "https://github.com/EkowYalley/cmse492-hw02-yalleyek/blob/main/HW02-STUDENT.ipynb"
+repo_url: "https://github.com/EkowYalley/cmse492-hw02-yalleyek"
 image_path: "img/my_project_1.png"

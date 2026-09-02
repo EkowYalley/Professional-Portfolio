@@ -7,15 +7,12 @@
 # ============================================================
 
 name: "Ekow Yalley"
-tagline: " Data Scientist | Umich | 2021 Graduate"
+tagline: "Data Analyst | Python | SQL | Data Quality | Bellbrook, Ohio"
 
 about: |
-  I am a data science student at University of Michigan, passionate about leveraging data to solve real-world problems.
-   With a background in statistics and machine learning, I enjoy exploring data to uncover insights and drive informed decision-making. 
-   I am eager to apply my skills in a collaborative environment and contribute to impactful projects.
+  I earned a Bachelor of Science from the University of Michigan with a double major in Econometrics (Data Science) and Biology. My work sits at the intersection of analysis and operations: cleaning data, checking whether outputs are trustworthy, and explaining results in language a decision-maker can use.
 
-  _I would like this portfolio to showcase my work and skills, as a data science professional
-  I picked the projects that best represent my abilities and interests, and showcase a diversity of skills._
+  I am pursuing junior data analyst, business-intelligence, reporting, operations-analytics, and data-quality roles in Ohio. The projects below retain their course or team context and state their limitations instead of presenting classroom work as production deployment.
 
 # Contact information — remove any fields you prefer not to share
 email: "ekowny@gmail.com"

@@ -5,34 +5,33 @@
 # Copy this file to create your own project entries.
 # ============================================================
 
-title: "Project Sports prediction"
+title: "Rail Operations Data Exploration"
+context: "MxV Rail team project · private data"
 
 short_summary: >
-  The project I did for Introduction to Machine Learning was to predict the outcomes of the march madness tournament using different machine learning models and then comparing the results of those models to see which one was more accurate at predicting the outcomes of the tournament.
+  Analyzed months of train-run data and created visualizations comparing rail-car behavior across operating conditions and track segments.
 
 
 tech_stack:
-  - Pandas
-  - Pathlib
   - Python
-  - re
-  - numpy
-  - matplotlib
-  - sklearn 
+  - Orange
+  - Exploratory data analysis
+  - Data visualization
 
 problem_statement: >
-  The problem was to find which model was more accurate at predicting the outcomes of the march madness tournament. 
+  Help a student project team explore operational patterns in rail-car runs and communicate those patterns clearly.
 
 approach: >
-  I used data sets that were publicaly avalible of previous march madness tournaments and I used those previous results to 
-  create a new data frame of what I felt was the most important features to predict the outcomes of the tournament. I then used that data frame to train different machine learning models 
-  and then I compared the results of those models to see which one was more accurate at predicting the outcomes of the tournament.
+  Used Python and Orange to compare train cars under different conditions and across track sections, then created graphics for team discussions and the final showcase.
 
 results_impact: >
-  I recorded the frequency of how many times each model predicted how many times each team would go to each round of the tournament and then 
-  I compared those frequencies to the actual outcomes of the tournament to see which model was more accurate.
+  Produced exploratory views of operating patterns. No causal safety improvement, maintenance savings, or production deployment is claimed.
+validation: >
+  The public portfolio does not yet contain sufficient code, data, or documentation to independently reproduce the analysis.
+limitations: >
+  The underlying rail data is private and the analysis was team-based. Ekow's precise ownership of code and outputs still needs a written project note.
 
 
-repo_url: "https://github.com/Lcoronam/March-Madness/tree/main"
-notebook_url: "https://github.com/Lcoronam/March-Madness/blob/main/482Project_Final.ipynb"
+repo_url: ""
+notebook_url: ""
 image_path: "img/img_LC.png"

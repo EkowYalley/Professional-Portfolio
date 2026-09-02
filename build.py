@@ -17,9 +17,9 @@ to preview the site locally.
 
 import shutil
 import sys
+from html import escape
 from pathlib import Path
 
-import markdown
 import yaml
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -83,10 +83,10 @@ def build() -> None:
         sys.exit(f"Error: student file '{student_rel}' not found.")
 
     student = load_yaml(student_path)
-    # Convert the about field from Markdown to HTML so students can use
-    # standard Markdown syntax: blank lines for paragraphs, *italic*, **bold**, etc.
+    # Convert plain-text paragraphs to safe HTML without requiring a Markdown runtime.
     if student.get("about"):
-        student["about"] = markdown.markdown(student["about"])
+        paragraphs = [part.strip() for part in student["about"].split("\n\n") if part.strip()]
+        student["about"] = "".join(f"<p>{escape(part)}</p>" for part in paragraphs)
     print(f"[2/4] Loaded student: {student_path.name}  ({student.get('name', '?')})")
 
     # ── 3. Load project files ───────────────────────────────────────────

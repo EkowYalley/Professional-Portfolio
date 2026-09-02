@@ -5,32 +5,33 @@
 # Copy this file to create your own project entries.
 # ============================================================
 
-title: "AWS "
+title: "AWS NYC 311 Service Resolution Modeling"
+context: "Predictive modeling · 6 validation checks passed"
 
 short_summary: >
-  The goal of this project was to explore AWS by picking a stackholder question and then using different Aws services like Atena and S3 as well as 
-  sagemaker to answer the question. 
+  Built a leakage-safe logistic-regression baseline using 49,999 validated public NYC 311 records and a target derived from actual creation and closure timestamps.
 
 tech_stack:
-  - sklearn
   - Python
-  - AWS Sagemaker
-  - io
+  - pandas
+  - scikit-learn
+  - AWS S3
+  - Athena
+  - SageMaker
 
 problem_statement: >
-  Compare sagemaker to regular sklearn to figure out which machine learning model was more accurate in predicting how long it took
-  for the city departments to resolve complaints.
+  Explore whether basic request attributes can help distinguish NYC 311 complaints resolved within three days from those that take longer.
 
 approach: >
-  The approach was to first use Athena to create a binary classification of the data set in order to predict whether a complaint would be resolved in less than 3 days or not. 
-  Then I used sagemaker to train a machine learning model on the data set and then I used sklearn to train a machine learning model on the same data set. 
-  Finally I compared the results of the two models to see which one was more accurate.
+  Recreated a deterministic public-data sample, derived resolution duration from timestamps, excluded post-resolution fields from the feature matrix, and used a stratified train/test split with a preprocessing-and-model pipeline.
 
 results_impact: >
-  The results showed that the sagemaker model was more accurate than the sklearn model in predicting how long it took for the city departments to resolve complaints.
-  This insight will help inform future machine learning projects and guide the selection of appropriate tools for different use cases.
+  The test set produced 78.7% accuracy, 88.6% precision, 73.7% recall, an 80.5% F1 score, and 88.3% ROC AUC, outperforming the 59.5% majority-class accuracy benchmark.
+validation: >
+  Six automated checks passed, covering timestamp-based target derivation, leakage prevention, train/test ID separation, nonnegative durations, class presence, and probability bounds.
+limitations: >
+  The sample covers Jan 29–Mar 21, 2026 and only includes closed requests. Results are historical associations and require subgroup and time-period monitoring before any operational use.
 
 
 repo_url: "https://github.com/EkowYalley/aws-nyc311-yalleyek/tree/master"
-notebook_url: "https://github.com/EkowYalley/aws-nyc311-yalleyek/tree/master/aws-nyc311-yalleyek/notebooks"
 image_path: "img/placeholder_project_2.png"
