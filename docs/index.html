@@ -3,135 +3,136 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ekow Yalley is an operations-minded data analyst with a University of Michigan background in econometrics, data science, and biology.">
-  <title>Ekow Yalley | Data Analyst</title>
+  <meta name="description" content="Ekow Yalley's analytics project portfolio: Python, SQL, data quality, validation, reporting, and reproducible analysis.">
+  <title>Ekow Yalley | Analytics Project Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Ekow Yalley home">EY</a>
+    <a class="brand" href="index.html"><strong>Ekow Yalley</strong><span>Analytics Project Portfolio</span></a>
     <nav aria-label="Primary navigation">
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="#case-studies">Case studies</a>
+      <a href="#methods">Methods</a>
+      <a href="https://ekowyalley.com/">Main website</a>
+      <a class="nav-cta" href="mailto:ekowny@gmail.com">Contact</a>
     </nav>
   </header>
 
   <main id="main">
-    <section class="hero" id="top">
-      <div class="hero-copy">
-        <p class="eyebrow">Bellbrook, Ohio · Early-career analytics</p>
-        <h1>Operations-minded data analyst who turns messy information into decisions people can use.</h1>
-        <p class="lede">I’m Ekow Yalley, a University of Michigan graduate with a B.S. in Econometrics (Data Science) and Biology. I work across Python, SQL, data validation, and reporting, and I’m pursuing junior data analyst, BI, reporting, and data-quality roles in Ohio.</p>
+    <section class="portfolio-hero">
+      <div>
+        <p class="eyebrow">Python · SQL · data quality · reporting</p>
+        <h1>Analysis that shows its work.</h1>
+        <p class="lede">I’m Ekow Yalley, a data analyst with a University of Michigan B.S. in Econometrics (Data Science) and Biology. This portfolio goes beyond screenshots: each case study explains the question, build, checks, result, and limitations.</p>
         <div class="actions">
-          <a class="button primary" href="#projects">View selected work</a>
-          <a class="button secondary" href="mailto:ekowny@gmail.com">Email Ekow</a>
+          <a class="button primary" href="#case-studies">Explore case studies</a>
+          <a class="button secondary" href="https://github.com/EkowYalley">View GitHub</a>
         </div>
       </div>
-      <figure class="portrait-card">
-        <img src="IMG_4656.PNG" alt="Portrait of Ekow Yalley">
-        <figcaption>Python · SQL · data quality · business intelligence</figcaption>
-      </figure>
+      <aside class="evidence-card" aria-label="Portfolio evidence summary">
+        <p class="card-label">Evidence at a glance</p>
+        <dl>
+          <div><dt>49,999</dt><dd>validated NYC 311 records</dd></div>
+          <div><dt>88.3%</dt><dd>ROC AUC on held-out data</dd></div>
+          <div><dt>$67.4K</dt><dd>SQL revenue reconciled</dd></div>
+          <div><dt>12</dt><dd>pipeline checks and tests</dd></div>
+        </dl>
+        <p>Every figure links to a documented method or reproducible repository.</p>
+      </aside>
     </section>
 
-    <section class="proof-strip" aria-label="Core strengths">
-      <div><strong>University of Michigan</strong><span>B.S., double major</span></div>
-      <div><strong>Python + SQL</strong><span>analysis and automation</span></div>
-      <div><strong>Validation first</strong><span>checks, limits, reproducibility</span></div>
-      <div><strong>Ohio focused</strong><span>early-career data roles</span></div>
-    </section>
-
-    <section class="section" id="experience">
-      <div class="section-heading">
-        <p class="eyebrow">Experience</p>
-        <h2>Data work grounded in operations</h2>
+    <section class="section" id="case-studies">
+      <div class="section-intro">
+        <p class="eyebrow">Selected case studies</p>
+        <h2>Start with the decision, then inspect the evidence.</h2>
+        <p>Three public projects have reproducible code and explicit validation. The rail analysis is included as professional context with its private-data boundary stated clearly.</p>
       </div>
-      <div class="timeline">
-        <article>
-          <div class="timeline-meta"><span>May 2021–Present</span><span>Current</span></div>
-          <div><h3>Eco-Rubber Limited</h3><p class="role">Operations Data Analyst</p></div>
-          <div><p>Building weather-data workflows for tapping decisions, equipment-monitoring concepts for maintenance alerts, and a centralized SQL/ETL architecture for factory, inventory, purchasing, and shipping records.</p><p class="note">Implementation scope and measured results are still being documented; no production impact is claimed here.</p></div>
-        </article>
-        <article>
-          <div class="timeline-meta"><span>Sep 2024–Aug 2025</span><span>Professional</span></div>
-          <div><h3>ATESTEO North America</h3><p class="role">Test Bench Operator</p></div>
-          <p>Programmed and adjusted drive-test scripts, investigated anomalies in test data, and coordinated with technicians and engineers to keep component tests running and accurately reported.</p>
-        </article>
-        <article>
-          <div class="timeline-meta"><span>Aug 2025–Dec 2025</span><span>Team project</span></div>
-          <div><h3>MxV Rail</h3><p class="role">Data Lead</p></div>
-          <p>Used Python and Orange to explore months of train-run data and created visualizations comparing rail-car behavior across operating conditions and track segments.</p>
-        </article>
-      </div>
-    </section>
 
-    <section class="section projects" id="projects">
-      <div class="section-heading">
-        <p class="eyebrow">Selected work</p>
-        <h2>Projects with the context left in</h2>
-        <p>Each project states what the data can support, what remains uncertain, and whether the work was completed independently, in a course, or with a team.</p>
-      </div>
-      <div class="project-grid">
-        <article class="project-card featured">
-          <div class="project-kicker"><span>Predictive modeling</span><span>6 validation checks passed</span></div>
-          <h3>AWS NYC 311 Service Resolution Modeling</h3>
-          <p>Built a leakage-safe logistic-regression baseline using 49,999 validated public NYC 311 records and a target derived from actual creation and closure timestamps.</p>
-          <dl class="metrics">
-            <div><dt>Accuracy</dt><dd>78.7%</dd></div>
-            <div><dt>Recall</dt><dd>73.7%</dd></div>
-            <div><dt>Model</dt><dd>Logistic regression</dd></div>
-          </dl>
-          <p class="note"><strong>What the result means:</strong> the corrected baseline outperformed the 59.5% majority-class benchmark and achieved 88.3% ROC AUC. It is still historical, closed-request data—not a deployment-ready prioritization system.</p>
-          <div class="tags"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>AWS</span><span>Athena</span></div>
-          <div class="card-actions"><a href="https://github.com/EkowYalley/AWS-NYC311-Resolution-Modeling" target="_blank" rel="noopener">GitHub repository</a></div>
+      <div class="case-list">
+        <article class="case-row feature">
+          <div class="case-number">01</div>
+          <div class="case-main">
+            <div class="case-meta"><span>Predictive modeling</span><span>Python + AWS</span></div>
+            <h3>AWS NYC 311 Resolution Modeling</h3>
+            <p>Can public service requests be classified by whether they close within 72 hours—without leaking the answer into the model?</p>
+            <ul class="result-list">
+              <li><strong>78.71%</strong> accuracy</li>
+              <li><strong>79.88%</strong> balanced accuracy</li>
+              <li><strong>6/6</strong> validation checks passed</li>
+            </ul>
+          </div>
+          <div class="case-action"><a href="aws-nyc311.html">Read case study <span aria-hidden="true">→</span></a></div>
         </article>
 
-        <article class="project-card">
-          <div class="project-kicker"><span>SQL analysis</span><span>5 validation checks passed</span></div>
-          <h3>Rental Revenue Analysis in SQL</h3>
-          <p>Analyzed $67,406.56 of linked rental revenue across 200 actors in the fictional Sakila database using joins, grouped aggregation, CTEs, and window functions.</p>
-          <p class="note"><strong>Validation and limitation:</strong> five unmatched payments totaling $9.95 were quantified and excluded. Revenue is associated with an actor’s films; it does not measure that actor’s causal contribution to demand.</p>
-          <div class="tags"><span>MySQL</span><span>SQLAlchemy</span><span>Docker</span><span>Jupyter</span></div>
-          <div class="card-actions"><a href="https://github.com/EkowYalley/SQL-Rental-Revenue-Analysis" target="_blank" rel="noopener">GitHub repository</a></div>
+        <article class="case-row">
+          <div class="case-number">02</div>
+          <div class="case-main">
+            <div class="case-meta"><span>Revenue analysis</span><span>MySQL + Python</span></div>
+            <h3>Rental Revenue Analysis in SQL</h3>
+            <p>How can a normalized rental database support actor- and category-level reporting while keeping unmatched transactions visible?</p>
+            <ul class="result-list">
+              <li><strong>$67,406.56</strong> linked revenue</li>
+              <li><strong>$9.95</strong> unmatched and disclosed</li>
+              <li><strong>5/5</strong> checks passed</li>
+            </ul>
+          </div>
+          <div class="case-action"><a href="sql-revenue.html">Read case study <span aria-hidden="true">→</span></a></div>
         </article>
 
-        <article class="project-card">
-          <div class="project-kicker"><span>Data pipeline</span><span>8 checks · 4 tests passed</span></div>
-          <h3>Regional Sales Reporting Pipeline</h3>
-          <p>Built a reproducible Python pipeline that validates sales and customer files, joins them, aggregates regional/category reporting, and reconciles $7,816.00 from source to output.</p>
-          <p class="note"><strong>Scope:</strong> the included 48-row dataset is a small supplied sample. The project demonstrates workflow design, error detection, testing, and reconciliation—not production scale.</p>
-          <div class="tags"><span>Python</span><span>pandas</span><span>Data quality</span><span>Unit testing</span></div>
-          <div class="card-actions"><a href="https://github.com/EkowYalley/Regional-Sales-Reporting-Pipeline" target="_blank" rel="noopener">GitHub repository</a></div>
+        <article class="case-row">
+          <div class="case-number">03</div>
+          <div class="case-main">
+            <div class="case-meta"><span>Reporting pipeline</span><span>Python + pandas</span></div>
+            <h3>Regional Sales Reporting Pipeline</h3>
+            <p>How can two small source files become a clean, repeatable regional report with validation before and after the join?</p>
+            <ul class="result-list">
+              <li><strong>$7,816</strong> source-to-output reconciliation</li>
+              <li><strong>8</strong> pipeline checks</li>
+              <li><strong>4</strong> unit tests</li>
+            </ul>
+          </div>
+          <div class="case-action"><a href="sales-pipeline.html">Read case study <span aria-hidden="true">→</span></a></div>
         </article>
 
-        <article class="project-card">
-          <div class="project-kicker"><span>Team project</span><span>Private data</span></div>
-          <h3>Rail Operations Data Exploration</h3>
-          <p>Analyzed train-run data with Python and Orange, comparing cars across operating conditions and track sections and translating patterns into visual material for team discussions.</p>
-          <p class="note"><strong>Current limitation:</strong> the underlying rail data and code are not public, and the analysis does not establish causal safety or maintenance improvements.</p>
-          <div class="tags"><span>Python</span><span>Orange</span><span>EDA</span><span>Visualization</span></div>
+        <article class="case-row private">
+          <div class="case-number">04</div>
+          <div class="case-main">
+            <div class="case-meta"><span>Professional analysis</span><span>Private data</span></div>
+            <h3>Rail Operations Data Exploration</h3>
+            <p>Exploratory analysis of train-run data across operating conditions and track segments, presented with a clear boundary around non-public data and code.</p>
+          </div>
+          <div class="case-action"><a href="rail-operations.html">Read context note <span aria-hidden="true">→</span></a></div>
         </article>
       </div>
     </section>
 
-    <section class="section education" id="education">
-      <div class="section-heading"><p class="eyebrow">Education</p><h2>University of Michigan — Ann Arbor</h2></div>
-      <div class="education-card">
-        <div><h3>Bachelor of Science (B.S.)</h3><p>Double major: Econometrics (Data Science) and Biology</p></div>
-        <div class="education-meta"><span>Sep 2017–May 2021</span><span>GPA 3.88</span></div>
+    <section class="section methods" id="methods">
+      <div class="section-intro">
+        <p class="eyebrow">How I work</p>
+        <h2>Trust is part of the deliverable.</h2>
       </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Define the question</h3><p>Translate a broad request into a specific decision, target, or reporting output.</p></article>
+        <article><span>02</span><h3>Audit the inputs</h3><p>Check types, missing values, duplicates, join keys, ranges, and row-level exceptions.</p></article>
+        <article><span>03</span><h3>Build reproducibly</h3><p>Keep setup, transformations, dependencies, and run instructions understandable to another analyst.</p></article>
+        <article><span>04</span><h3>Reconcile the result</h3><p>Compare totals, test assumptions, quantify exclusions, and state what the output cannot prove.</p></article>
+      </div>
+      <div class="tool-line"><strong>Working toolkit</strong><span>Python</span><span>SQL</span><span>pandas</span><span>scikit-learn</span><span>MySQL</span><span>AWS S3</span><span>Athena</span><span>Jupyter</span><span>Git</span></div>
     </section>
 
-    <section class="contact" id="contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Looking for careful early-career analysts in Ohio?</h2>
-      <p>I’m interested in junior data analyst, BI, reporting, operations-analytics, and data-quality roles.</p>
-      <div class="actions"><a class="button primary" href="mailto:ekowny@gmail.com">ekowny@gmail.com</a><a class="button secondary light" href="https://www.linkedin.com/in/ekow-yalley-29869a260/" target="_blank" rel="noopener">LinkedIn</a><a class="button secondary light" href="https://github.com/EkowYalley" target="_blank" rel="noopener">GitHub</a></div>
+    <section class="closing">
+      <p class="eyebrow">About Ekow</p>
+      <h2>Operations-minded analyst, based in Bellbrook, Ohio.</h2>
+      <p>I bring an interdisciplinary foundation in econometrics, data science, and biology to practical work in reporting, validation, automation, and operational analysis.</p>
+      <div class="actions">
+        <a class="button primary" href="mailto:ekowny@gmail.com">ekowny@gmail.com</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/ekow-yalley-29869a260/">LinkedIn</a>
+        <a class="button secondary" href="https://ekowyalley.com/">Main website</a>
+      </div>
     </section>
   </main>
 
-  <footer><span>Ekow Yalley</span><span>Bellbrook, Ohio</span></footer>
+  <footer><span>© 2026 Ekow Yalley</span><span>Built to make the work easy to inspect.</span></footer>
 </body>
 </html>
