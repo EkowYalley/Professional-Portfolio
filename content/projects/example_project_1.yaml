@@ -34,5 +34,5 @@ validation: >
 limitations: >
   Sakila is fictional sample data. Revenue is associated with films in which an actor appears; it does not estimate that actor's causal contribution, and actor totals cannot be added because films have multiple actors.
 
-repo_url: "https://github.com/EkowYalley/cmse492-hw02-yalleyek"
+repo_url: "https://github.com/EkowYalley/SQL-Rental-Revenue-Analysis"
 image_path: "img/my_project_1.png"

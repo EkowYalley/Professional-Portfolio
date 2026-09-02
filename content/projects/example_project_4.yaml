@@ -25,5 +25,5 @@ validation: >
 limitations: >
   The 48-row dataset is a small supplied sample. It demonstrates workflow design and validation rather than production scale, and it does not include returns, discounts, taxes, incremental loading, or orchestration.
 
-repo_url: "https://github.com/EkowYalley/cmse492-hw01-yalleyek"
+repo_url: "https://github.com/EkowYalley/Regional-Sales-Reporting-Pipeline"
 image_path: "img/my_project_1.png"
