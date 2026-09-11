@@ -104,6 +104,7 @@ footer { max-width: var(--max); margin: 0 auto; padding: 1.5rem 2rem 2.5rem; dis
 .diagnostic-visual { margin: 1.5rem 0; }
 .diagnostic-visual img { display: block; width: 100%; height: auto; border: 1px solid var(--line); }
 .diagnostic-visual figcaption { margin-top: .55rem; color: var(--muted); font-size: .78rem; }
+.diagnostic-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; align-items: start; }
 .study-aside { align-self: start; position: sticky; top: 1.5rem; padding: 1.4rem; background: var(--white); border-top: 5px solid var(--maize); box-shadow: var(--shadow); }
 .study-aside h2 { font-size: 1.25rem; }
 .study-aside dl { margin: 1rem 0; }
@@ -136,6 +137,7 @@ footer { max-width: var(--max); margin: 0 auto; padding: 1.5rem 2rem 2.5rem; dis
   .site-header { align-items: flex-start; }
   nav { flex-wrap: wrap; justify-content: flex-end; gap: .7rem 1rem; }
   .portfolio-hero, .study-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+  .diagnostic-pair { grid-template-columns: 1fr; }
   .catalog-heading { grid-template-columns: 1fr; gap: 1rem; }
   .portfolio-hero { padding-top: 4rem; }
   .case-row { grid-template-columns: 44px 1fr; }
