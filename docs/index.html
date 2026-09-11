@@ -25,7 +25,7 @@
       <div>
         <p class="eyebrow">Python · SQL · data quality · reporting</p>
         <h1>Analysis that shows its work.</h1>
-        <p class="lede">I’m Ekow Yalley, a data analyst with a University of Michigan B.S. in Econometrics (Data Science) and Biology. This portfolio goes beyond screenshots: each case study explains the question, build, checks, result, and limitations.</p>
+        <p class="lede">I’m Ekow Yalley, a data analyst with a University of Michigan B.S. in Econometrics/Data Science and Biology. Each case study shows the question, build, validation, result, and visual evidence behind the work.</p>
         <div class="actions">
           <a class="button primary" href="#case-studies">Explore case studies</a>
           <a class="button secondary" href="https://github.com/EkowYalley">View GitHub</a>
@@ -35,11 +35,11 @@
         <p class="card-label">Evidence at a glance</p>
         <dl>
           <div><dt>49,999</dt><dd>validated NYC 311 records</dd></div>
-          <div><dt>88.3%</dt><dd>ROC AUC on held-out data</dd></div>
-          <div><dt>$67.4K</dt><dd>SQL revenue reconciled</dd></div>
-          <div><dt>12</dt><dd>pipeline checks and tests</dd></div>
+          <div><dt>78.7%</dt><dd>held-out accuracy</dd></div>
+          <div><dt>79.9%</dt><dd>balanced accuracy</dd></div>
+          <div><dt>88.3%</dt><dd>ROC AUC</dd></div>
         </dl>
-        <p>Every figure links to a documented method or reproducible repository.</p>
+        <p>The headline model metrics come directly from the saved evaluation outputs.</p>
       </aside>
     </section>
 
@@ -47,7 +47,7 @@
       <div class="section-intro">
         <p class="eyebrow">Selected case studies</p>
         <h2>Start with the decision, then inspect the evidence.</h2>
-        <p>Three public projects have reproducible code and explicit validation. The rail analysis is included as professional context with its private-data boundary stated clearly.</p>
+        <p>The featured work combines reproducible public projects with professional analysis built from private operating data.</p>
       </div>
 
       <div class="case-list">
@@ -55,34 +55,21 @@
           <div class="case-number">01</div>
           <div class="case-main">
             <div class="case-meta"><span>Predictive modeling</span><span>Python + AWS</span></div>
-            <h3>AWS NYC 311 Resolution Modeling</h3>
+            <h3>AWS NYC 311 Service Resolution Modeling</h3>
             <p>Can public service requests be classified by whether they close within 72 hours—without leaking the answer into the model?</p>
             <ul class="result-list">
               <li><strong>78.71%</strong> accuracy</li>
               <li><strong>79.88%</strong> balanced accuracy</li>
+              <li><strong>88.30%</strong> ROC AUC</li>
               <li><strong>6/6</strong> validation checks passed</li>
             </ul>
+            <figure class="case-visual"><img src="img/nyc311_model_diagnostics.png" alt="ROC curve and confusion matrix for the NYC 311 service-resolution model"><figcaption>Model diagnostics from the 10,000-record held-out test set.</figcaption></figure>
           </div>
           <div class="case-action"><a href="aws-nyc311.html">Read case study <span aria-hidden="true">→</span></a></div>
         </article>
 
         <article class="case-row">
           <div class="case-number">02</div>
-          <div class="case-main">
-            <div class="case-meta"><span>Revenue analysis</span><span>MySQL + Python</span></div>
-            <h3>Rental Revenue Analysis in SQL</h3>
-            <p>How can a normalized rental database support actor- and category-level reporting while keeping unmatched transactions visible?</p>
-            <ul class="result-list">
-              <li><strong>$67,406.56</strong> linked revenue</li>
-              <li><strong>$9.95</strong> unmatched and disclosed</li>
-              <li><strong>5/5</strong> checks passed</li>
-            </ul>
-          </div>
-          <div class="case-action"><a href="sql-revenue.html">Read case study <span aria-hidden="true">→</span></a></div>
-        </article>
-
-        <article class="case-row">
-          <div class="case-number">03</div>
           <div class="case-main">
             <div class="case-meta"><span>Reporting pipeline</span><span>Python + pandas</span></div>
             <h3>Regional Sales Reporting Pipeline</h3>
@@ -97,13 +84,13 @@
         </article>
 
         <article class="case-row private">
-          <div class="case-number">04</div>
+          <div class="case-number">03</div>
           <div class="case-main">
             <div class="case-meta"><span>Professional analysis</span><span>Private data</span></div>
             <h3>Rail Operations Data Exploration</h3>
-            <p>Exploratory analysis of train-run data across operating conditions and track segments, presented with a clear boundary around non-public data and code.</p>
+            <p>As Data Lead, structured car-, condition-, and segment-level comparisons across months of train-run data and turned recurring behavioral differences into visual material for technical team discussions.</p>
           </div>
-          <div class="case-action"><a href="rail-operations.html">Read context note <span aria-hidden="true">→</span></a></div>
+          <div class="case-action"><a href="rail-operations.html">Read case study <span aria-hidden="true">→</span></a></div>
         </article>
       </div>
     </section>
@@ -112,11 +99,11 @@
       <div class="section-intro">
         <p class="eyebrow">Project library</p>
         <h2>More than the headline case studies.</h2>
-        <p>Smaller builds and technical explorations show range beyond the three fully validated analytics repositories.</p>
+        <p>Smaller builds and technical explorations show range without competing with the data-focused case studies.</p>
       </div>
       <div class="library-grid">
-        <article><p class="status">Supporting project · runnable</p><h3>Me vs. You</h3><p>A two-player Snake game built with Python Turtle, including independent controls, scoring, growth, and player-to-player collision logic.</p><a href="me-vs-you.html">View project →</a></article>
-        <article><p class="status">Computational methods · reviewed</p><h3>Numerical Computing Experiments</h3><p>Power iteration, Numba acceleration, Monte Carlo estimation, and recorded HPC timing experiments—with benchmarking limitations kept visible.</p><a href="numerical-computing.html">View project →</a></article>
+        <article><p class="status">Fun project · runnable</p><h3>Me vs. You</h3><p>A two-player Snake game built with Python Turtle, including independent controls, scoring, growth, and player-to-player collision logic.</p><a href="me-vs-you.html">View project →</a></article>
+        <article><p class="status">Computational methods · reviewed</p><h3>Numerical Computing Experiments</h3><p>Power iteration, Numba acceleration, Monte Carlo estimation, and recorded HPC timing experiments.</p><a href="numerical-computing.html">View project →</a></article>
       </div>
       <p class="library-link"><a href="projects.html">Browse the complete reviewed repository catalog →</a></p>
     </section>
@@ -137,8 +124,8 @@
 
     <section class="closing">
       <p class="eyebrow">About Ekow</p>
-      <h2>Operations-minded analyst, based in Bellbrook, Ohio.</h2>
-      <p>I bring an interdisciplinary foundation in econometrics, data science, and biology to practical work in reporting, validation, automation, and operational analysis.</p>
+      <h2>Operations-minded analyst, startup builder, and nonprofit founder.</h2>
+      <p>At Eco-Rubber Limited, I build data workflows spanning agricultural planning, factory monitoring, inventory, purchasing, and logistics. I also founded Equiduct Education Program, a 501(c)(3) that connects college volunteers with K–12 students for free tutoring and mentorship.</p>
       <div class="actions">
         <a class="button primary" href="mailto:ekowny@gmail.com">ekowny@gmail.com</a>
         <a class="button secondary" href="https://www.linkedin.com/in/ekow-yalley-29869a260/">LinkedIn</a>
@@ -147,6 +134,6 @@
     </section>
   </main>
 
-  <footer><span>© 2026 Ekow Yalley</span><span>Bellbrook, Ohio</span></footer>
+  <footer><span>© 2026 Ekow Yalley</span><span>Columbus, Ohio</span></footer>
 </body>
 </html>

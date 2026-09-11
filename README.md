@@ -8,7 +8,7 @@ The portfolio is intentionally separate from his concise professional website at
 
 ## Featured work
 
-- AWS NYC 311 Resolution Modeling
+- AWS NYC 311 Service Resolution Modeling
 - Rental Revenue Analysis in SQL
 - Regional Sales Reporting Pipeline
 - Rail Operations Data Exploration (private-data context note)
