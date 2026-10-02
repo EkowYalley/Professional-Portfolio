@@ -1,10 +1,10 @@
 # Ekow Yalley — Analytics Project Portfolio
 
-This repository publishes Ekow Yalley's project-focused portfolio at:
+I am Tawiah Yalley, commonly known as Ekow Yalley. I am a University of Michigan graduate who majored in Econometrics and Biology. For the last five years, I have been working as an Operations Analyst/Junior Data Scientist at Eco Rubber. I have also completed data science projects on the side that I hope to display:
 
 **https://ekowyalley.github.io/Professional-Portfolio/**
 
-The portfolio is intentionally separate from his concise professional website at **https://ekowyalley.com/**. It gives hiring teams deeper case studies covering the analytical question, data scope, implementation, validation, results, limitations, and reproducibility.
+The portfolio is intentionally separate from my concise professional website at **https://ekowyalley.com/**. It gives visitors deeper case studies covering the analytical question, data scope, implementation, validation, results, limitations, and reproducibility.
 
 ## Featured work
 
