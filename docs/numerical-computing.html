@@ -1,12 +1,14 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Supporting project: controlled power-iteration benchmarking and Numba numerical-computing experiments."><title>Numerical Computing Experiments | Ekow Yalley</title><link rel="stylesheet" href="styles.css"></head>
-<body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html"><strong>Ekow Yalley</strong><span>Analytics Project Portfolio</span></a><nav aria-label="Primary navigation"><a href="index.html">Portfolio Home</a><a href="projects.html">Project library</a><a href="https://ekowyalley.com/">Main website</a><a class="nav-cta" href="mailto:ekowny@gmail.com">Contact</a></nav></header>
-<main id="main"><section class="study-hero"><p class="breadcrumb"><a href="projects.html">Project library</a> / Supporting project</p><p class="eyebrow">Numerical methods · Python · Numba</p><h1>Numerical Computing Experiments</h1><p class="lede">A set of learning projects around power iteration, just-in-time compilation, Monte Carlo simulation, and responsible performance measurement.</p></section>
-<div class="study-layout"><article class="study-body">
-  <section><h2>The analytical idea</h2><p>Power iteration estimates the dominant eigenvalue and eigenvector of a matrix—an operation connected to methods such as principal component analysis. The repositories explore NumPy and Numba implementations plus batch execution through Slurm.</p></section>
-  <section><h2>Benchmark design</h2><p>A meaningful performance comparison requires the same workload and numerical conditions. The controlled benchmark gives both implementations the same seeded matrix, starting vector, convergence tolerance, and iteration limit. It warms up compilation, reports median timing, and validates both estimates against NumPy’s symmetric eigensolver.</p></section>
-  <section><h2>Companion Monte Carlo experiment</h2><p>A second repository estimates pi from one million random samples using Numba’s <code>nopython</code> mode. Its recorded Slurm run produced 3.140052, connecting simulation, compiled Python, and batch execution in one compact experiment.</p></section>
-  <section><h2>What the work demonstrates</h2><p>Together, the projects show numerical-method implementation, compiled Python loops, batch-computing exposure, validation against a trusted solver, and disciplined performance measurement. The key limitation is that timing conclusions remain specific to the tested workloads and environment.</p></section>
-  <div class="next-study"><a href="me-vs-you.html">← Me vs. You</a><a href="projects.html">Project library →</a></div>
-</article><aside class="study-aside"><h2>Project card</h2><dl><dt>Type</dt><dd>Computational experiments</dd><dt>Methods</dt><dd>Power iteration, Monte Carlo</dd><dt>Tools</dt><dd>Python, NumPy, Numba, Slurm</dd><dt>Controls</dt><dd>Seeded inputs, warm-up, median timing</dd><dt>Validation</dt><dd>Compared with NumPy eigensolver</dd></dl><a class="button primary" href="https://github.com/EkowYalley/Project-files">Power-iteration repository</a><a class="button secondary" href="https://github.com/EkowYalley/Project_Numba">Monte Carlo repository</a></aside></div>
-</main><footer><span>© 2026 Ekow Yalley</span><span>Columbus, Ohio</span></footer></body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="canonical" href="https://ekowyalley.com/numerical-computing.html">
+  <title>Ekow Yalley | Portfolio moved</title>
+  <script>
+    const destination = new URL("https://ekowyalley.com/numerical-computing.html");
+    destination.hash = location.hash;
+    location.replace(destination.href);
+  </script>
+</head>
+<body><p><a href="https://ekowyalley.com/numerical-computing.html">Continue to Ekow Yalley’s website</a></p></body>
+</html>
